@@ -22,10 +22,10 @@ contenedor.addEventListener('click',(e)=>{
         let gusticos=(gustos.value).split(',')
         contactoOtro.push({nombre:nombre.value,apellido:apellido.value,numero:numero.value,gustos:gusticos,foto:`${foto.value}`})
         localStorage.setItem('contactos',JSON.stringify(contactoOtro))
-        setTimeout(()=>{location='../HTML/index.html'})
+        setTimeout(()=>{location='../index.html'})
 
     }else if (e.target.id=='cancel'){
-        location='../HTML/index.html'
+        location.href='../index.html'
     }
 
 })
