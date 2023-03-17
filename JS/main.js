@@ -17,7 +17,6 @@ personas.forEach(fotico=>{
 let btn_buscar=document.getElementById('btn_buscar').addEventListener('click',()=>{ 
     if(personas.find(persona=>(persona.nombre).toUpperCase()==(nombre.value).toUpperCase())){
         let index=personas.findIndex(persona=>(persona.nombre).toUpperCase()==(nombre.value).toUpperCase())
-        console.log(index)
         document.querySelector('.conteinerImg').innerHTML=`
         <img src="${personas[index].foto}" alt="">`
         if (document.getElementById('selection').value=="apellido"){
