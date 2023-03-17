@@ -48,6 +48,6 @@ let btn_buscar=document.getElementById('btn_buscar').addEventListener('click',()
 })
 
 const btn_agregar=document.querySelector('.btn_agregar').addEventListener('click',()=>{
-    location.href='../HTML/Añadir.html'
+    location.href='./HTML/Añadir.html'
 })
 
